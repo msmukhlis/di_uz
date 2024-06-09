@@ -1,0 +1,52 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+span, a, label {
+  display: inline-block;
+}
+.container {
+    max-width: 1280px;
+}
+button {
+  cursor: pointer;
+}
+a {
+  cursor: pointer;
+}
+.callBox {
+  width: 42px;
+  height: 42px;
+  background-color: #fab448;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 5%;
+  bottom: 10%;
+  z-index: 1;
+}
+.call {
+  text-decoration: none;
+  color: #fff;
+
+}
+@media (max-width: 900px) {
+  .callBox {
+    top: 2.5%;
+    right: 10%;
+   
+  }
+}

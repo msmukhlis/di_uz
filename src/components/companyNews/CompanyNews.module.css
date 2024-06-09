@@ -1,0 +1,141 @@
+.main {
+    padding: 141px 0 146px;
+    background-image: url(../../../public/images/bg-news.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.line {
+    width: 2rem;
+    height: .25rem;
+    background-color: #fab448;
+}
+.title > h2, .h2 {
+    font-size: 39px;
+    font-weight: 600;
+    color: #262524;
+}
+.h2 {
+    margin-left: 98px;
+}
+.display {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 88px;
+}
+.boxes {
+    padding: 58.5px 0 0 88px;
+}
+.box {
+    height: 286px;
+    overflow: hidden;
+    position: relative;
+}
+.box::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 92%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);   
+}
+.img {
+    width: 92%;
+    height: 100%;
+    object-fit: cover;
+}
+.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #FFF;
+    transform: translateX(35%) translateY(110%);
+}
+.date > span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fab448;
+}
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11.7px;
+    color: #FFF;
+    transform: translateY(-200%) translateX(5%);
+}
+.btns {
+    display: flex;
+    gap: 15px;
+}
+.btn {
+    width: 37px;
+    height: 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #fab448;
+    color: #fab448;
+    cursor: pointer;
+}
+.btnBox {
+    width: 140px;
+    height: 44px;
+    border: 1px solid #fab448;
+    position: relative;
+    margin: 126px auto 0;
+}
+.btnNews {
+    font-size: 11px;
+    width: 140px;
+    height: 44px;
+    border: 1px solid #fab448;
+    color: #262524;
+    background-color: transparent;
+    position: absolute;
+    top: 0; 
+    transform: translateX(-5%) translateY(15%);
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btnNews:hover {
+    transform: translateX(0%) translateY(0%);
+    background-color: #fab448;
+    color: #FFF;
+  }
+  @media (max-width: 900px) {
+    .main {
+        padding: 115px 26px 123px;
+    }
+    .display {
+        padding: 0;
+    }
+    .boxes {
+        padding: 50px 0 0 26px;
+    }
+    .btnNews {
+        font-size: 15.4px;
+        width: 181px;
+        height: 55px;
+    }
+    .btnBox {
+        width: 181px;
+        height: 55px;
+        margin-top: 106px;
+    }
+    .btns {
+        display: none;
+    }
+  }

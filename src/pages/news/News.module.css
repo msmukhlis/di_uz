@@ -1,0 +1,74 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    padding: 150px 88px 65px;
+}
+.banner h2 {
+    font-size: 62.4px;
+    font-weight: 600;
+}
+.banner p {
+    font-size: 13px;
+    line-height: 200%;
+    max-width: 545px;
+}
+.boxes {
+    padding: 141px 88px 146px;
+    background-image: url(../../../public/images/bg-news.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 58.5px;
+}
+.box {
+    width: 32%;
+    height: 286px;
+    overflow: hidden;
+    position: relative;
+}
+.box:last-child {
+    margin-top: 20px;
+}
+.box::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.5);   
+}
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.date {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 13px;
+    color: #FFF;
+    transform: translateX(35%) translateY(110%);
+}
+.date > span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #fab448;
+}
+.text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 11.7px;
+    color: #FFF;
+    transform: translateY(-200%) translateX(5%);
+}

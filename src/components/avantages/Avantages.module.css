@@ -1,0 +1,70 @@
+.main {
+    background-image: url(../../../public/images/advantages.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 78px 88px 145.6px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.line {
+    width: 2rem;
+    height: .25rem;
+    background-color: #fab448;
+}
+.title > h2, .h2 {
+    font-size: 39px;
+    font-weight: 600;
+    color: #262524;
+}
+.h2 {
+    margin-left: 98px;
+}
+.boxes {
+    margin-top: 65px;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 28%;
+}
+.icon {
+    font-size: 75px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.title {
+    font-size: 17px;
+    margin-bottom: 17px;
+    font-weight: 650;
+}
+.text {
+    font-size: 12.35px;
+    line-height: 150%;
+}
+@media (max-width: 900px) {
+    .main {
+        padding: 50.6px 26px 55px;
+    }
+    .boxes {
+        flex-wrap: wrap;
+        margin-top: 55px;
+    }
+    .box {
+        width: 100%;
+        margin-bottom: 66px;
+    }
+    .icon {
+        font-size: 125px;
+    }
+    .title {
+        font-size: 29px;
+        margin-bottom: 27.5px;
+    }
+    .text {
+        font-size: 20.9px;
+    }
+}

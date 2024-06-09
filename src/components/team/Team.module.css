@@ -1,0 +1,53 @@
+.main {
+    padding: 52px 0 65px 88px;
+}
+.title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.line {
+    width: 2rem;
+    height: .25rem;
+    background-color: #fab448;
+}
+.title > h2, .h2 {
+    font-size: 39px;
+    font-weight: 600;
+    color: #262524;
+}
+.h2 {
+    margin-left: 98px;
+}
+.boxes {
+    margin-top: 60px;
+}
+.box {
+    height: 350px;
+    cursor: pointer;
+}
+.box:hover h3 {
+    color: #fab448;
+}
+.img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+}
+.texts {
+    margin-top: 20px;
+}
+.texts > h3 {
+    font-size: 17px;
+    color: #262524;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.texts > p {
+    font-size: 12.35px;
+}
+@media (max-width: 900px) {
+    .main {
+        padding: 44px 26.4px 55px;
+    }
+}

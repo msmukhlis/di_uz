@@ -1,0 +1,43 @@
+.banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F9F9F9;
+    padding: 150px 88px 65px;
+}
+.banner h2 {
+    font-size: 62.4px;
+    font-weight: 600;
+}
+.banner p {
+    font-size: 13px;
+    line-height: 200%;
+    max-width: 545px;
+}
+
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    padding: 65px 88px 104px;
+}
+.img {
+    width: 534px;
+    height: 284px;
+}
+.row {
+    width: 49%;
+}
+.box {
+    margin-top: 17px;
+    cursor: pointer;
+    position: relative;
+}
+.link {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20.8px;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+}
