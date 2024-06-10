@@ -106,11 +106,30 @@
     }
     .boxes {
         width: 100%;
+        flex-wrap: wrap;
     }
     .box {
         width: 50%;
     }
     .box2 {
         display: none;
+    }
+}
+@media (max-width: 350px) {
+    .texts p {
+        font-size: 20px;
+    }
+    .h2 {
+        margin-left: 0;
+    }
+    .row {
+        height: auto;
+    }
+    .box {
+        width: 50%;
+        height: 100%;
+    }
+    .aboutPage {
+        padding: 78px 24px 78px; 
     }
 }

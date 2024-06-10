@@ -68,3 +68,11 @@
         font-size: 20.9px;
     }
 }
+@media (max-width: 350px) {
+    .main {
+        padding: 46px 24px 60px;
+    }
+    .h2 {
+        margin-left: 0;
+    }
+}

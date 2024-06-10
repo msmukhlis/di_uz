@@ -23,22 +23,22 @@ export const News = () => {
         <p>{t("We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment:")}</p>
       </div>
     <div className={styles.boxes}>
-       <div className={styles.box}>
+       <div data-aos="fade-up" className={styles.box}>
                 <img src={news1} alt="photo" className={styles.img}/>
                 <p className={styles.date}><span></span>2023-01-27</p>
                 <p className={styles.text}>{t("Who is the project manager of construcktion?")}</p>
               </div>
-              <div className={styles.box}>
+              <div data-aos="fade-up" className={styles.box}>
                 <img src={news2} alt="photo" className={styles.img}/>
                 <p className={styles.date}><span></span>2022-12-31</p>
                 <p className={styles.text}>{t("Discover Invest congratulates everyone on a coming Happy New Year 2023!")}</p>
               </div>
-              <div className={styles.box}>
+              <div data-aos="fade-up" className={styles.box}>
                 <img src={news3} alt="photo" className={styles.img}/>
                 <p className={styles.date}><span></span>2022-10-02</p>
                 <p className={styles.text}>{t("THE DAY WHEN THE CONSTITUTION OF THE REPUBLIC OF UZBEKISTAN WAS ADOPTED")}</p>
               </div>
-              <div className={styles.box}>
+              <div data-aos="fade-up" className={styles.box}>
                 <img src={news4} alt="photo" className={styles.img}/>
                 <p className={styles.date}><span></span>2022-12-19</p>
                 <p className={styles.text}>{t("We continue to introduce you to Discover Invest's wide range of construction properties.")}</p>

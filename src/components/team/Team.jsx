@@ -26,6 +26,13 @@ export const Team = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
       }
     ]
   };
@@ -38,11 +45,11 @@ export const Team = () => {
   
   return (
     <div className={styles.main}>
-      <div className={styles.title}>
+      <div data-aos="fade-right" className={styles.title}>
         <div className={styles.line}></div>
         <h2>{t("Our")}</h2>
       </div>
-      <h2 className={styles.h2}>{t("team")}</h2>
+      <h2 data-aos="fade-right" className={styles.h2}>{t("team")}</h2>
       <Slider
         className={styles.boxes}
         ref={slider => {

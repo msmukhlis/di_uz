@@ -78,7 +78,7 @@
    justify-content: space-between;
    flex-wrap: wrap;
    margin-bottom: 60px;
-   width: 545px;
+   max-width: 545px;
 }
 .box {
     width: 43%;
@@ -173,3 +173,58 @@
     transform: scale(1.2);
     color: rgb(250, 180, 72);
 } 
+@media (max-width: 900px) {
+    .mainPage {
+        padding: 580px 26px 30px;
+    }
+    .btnBox {
+        display: none;
+    }
+    .form {
+        width: 90%;
+        transform: translateX(-6%) translateY(125%);
+    }
+    .help {
+        padding: 600px 26px 66px;
+    }
+    .input {
+        font-size: 1.4rem;
+    }
+    .btn button {
+        font-size: 15.4px;
+        padding: 24.2px;
+    }
+}
+@media (max-width: 900px) {
+    .mainPage {
+        padding: 350px 26px 10px;
+    }
+    .title {
+        font-size: 58px;
+    }
+    .text {
+        font-size: 16px;
+    }
+    .right > p {
+        font-size: 20px;
+    }
+    .form {
+        transform: translateX(-6%) translateY(90%);
+    }
+    .fieldset > label {
+        font-size: 14px;
+    }
+    .input {
+        font-size: 14px;
+    }
+    .btn {
+        width: 100%;
+    }
+    .box {
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .copyRight {
+        padding: 16px 24px;
+    }
+}

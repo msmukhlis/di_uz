@@ -177,4 +177,30 @@ label {
     .input {
         font-size: 1.4rem;
     }
+    .copyRight {
+        padding: 30px 26px 33px;
+    }
+}
+@media (max-width: 900px) {
+    .left {
+        margin-bottom: 200px;
+    }
+    .footer {
+        padding: 60px 24px;
+    }
+    .copyRight {
+        padding: 20px 15px;
+    }
+    .copyText {
+        text-align: right;
+    }
+    .box > h3 {
+        font-size: 26px;
+    }
+    .box > p {
+        font-size: 18px;
+    }
+    .input {
+        font-size: 1rem;
+    }
 }

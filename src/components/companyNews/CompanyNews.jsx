@@ -30,6 +30,13 @@ export const CompanyNews = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
         }
+      },
+      {
+        breakpoint: 350,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
       }
     ]
   }
@@ -41,16 +48,20 @@ export const CompanyNews = () => {
   };
   handleChange
 
+  const scrolltoTop = () => {
+    window.scrollTo(0, 0)
+  }
+
 
   return (
     <div className={styles.main}>
             <div className={styles.display}>
             <div>
-            <div className={styles.title}>
+            <div data-aos="fade-right" className={styles.title}>
                 <div className={styles.line}></div>
                 <h2>{t("Company")}</h2>
             </div>
-            <h2 className={styles.h2}>{t("News")}</h2>
+            <h2 data-aos="fade-right" className={styles.h2}>{t("News")}</h2>
             </div>
             <div className={styles.btns}>
               <button className={styles.btn} onClick={previous}>
@@ -88,7 +99,7 @@ export const CompanyNews = () => {
               </div>
             </Slider>
             <div className={styles.btnBox}>
-              <Link to="/news"><button className={styles.btnNews}>{t("All news")}</button></Link>
+              <Link onClick={scrolltoTop} to="/news"><button className={styles.btnNews}>{t("All news")}</button></Link>
             </div>
       </div>
   )

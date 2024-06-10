@@ -12,19 +12,23 @@ export const AboutPage = () => {
     };
     handleChange
 
+    const scrolltoTop = () => {
+        window.scrollTo(0, 0)
+      }
+
   return (
     <div className={styles.aboutPage}>
-        <div className={styles.title}>
+        <div data-aos="fade-down-right" className={styles.title}>
                 <div className={styles.line}></div>
                 <h2>{t("About")}</h2>
             </div>
-            <h2 className={styles.h2}>DISCOVER INVEST</h2>
+            <h2 data-aos="fade-down-right" className={styles.h2} >DISCOVER INVEST</h2>
       <div className={styles.display}>
-      <div className={styles.texts}>
+      <div data-aos="fade-down-right" className={styles.texts}>
             <p>{t("We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the environmental aspects related to the construction and operation of buildings and infrastructure.")}</p>
         </div>
-        <div className={styles.boxes}>
-            <div className={styles.row}>
+        <div className={styles.boxes} data-aos="fade-down-left">
+            <div  className={styles.row}>
                 <div className={`${styles.box} ${styles.box2}`}>
                     <h2></h2>
                     <p></p>
@@ -54,7 +58,7 @@ export const AboutPage = () => {
             </div>
             <div className={styles.row}>
                 <div className={`${styles.box} ${styles.box3}`}>
-                <Link className={styles.link} to="/about"><h3>{t("About")}</h3></Link>
+                <Link onClick={scrolltoTop} className={styles.link} to="/about"><h3>{t("About")}</h3></Link>
                 </div>
                 <div className={styles.box}>
                     <h2>4000+</h2>

@@ -19,12 +19,12 @@ export const Avantages = () => {
 
   return (
      <div className={styles.main}>
-          <div className={styles.title}>
+          <div data-aos="fade-right" className={styles.title}>
                 <div className={styles.line}></div>
                 <h2>{t("Our")}</h2>
             </div>
-            <h2 className={styles.h2}>{t("advantages")}</h2>
-            <div className={styles.boxes}>
+            <h2 data-aos="fade-right" className={styles.h2}>{t("advantages")}</h2>
+            <div data-aos="fade-right" className={styles.boxes}>
                 <div className={styles.box}>
                     <div>
                         <div className={styles.icon}>

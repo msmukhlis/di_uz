@@ -20,6 +20,10 @@ export const About = () => {
   };
   handleChange
 
+  const scrolltoTop = () => {
+    window.scrollTo(0, 0)
+  }
+
 
   return (
     <div className={styles.main}>
@@ -34,62 +38,62 @@ export const About = () => {
       </div>
       <div className={styles.aboutCompany}>
         <div className={styles.left}>
-          <div className={styles.title2}>
+          <div data-aos="fade-down-right" className={styles.title2}>
             <div className={styles.line}></div>
             <h2>{t("About")}</h2>
           </div>
-          <h2 className={styles.h2}>{t("Company")}</h2>
+          <h2 data-aos="fade-down-right" className={styles.h2}>{t("Company")}</h2>
           <img src={pic1} alt="photo" className={styles.pic} />
         </div>
         <div className={styles.right}>
-          <div className={styles.photoBox}>
+          <div data-aos="fade-down-left" className={styles.photoBox}>
             <img src={pic2} alt="photo" className={styles.photo} />
           </div>
-          <p>{t("We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the environmental aspects related to the construction and operation of buildings and infrastructure.")}</p>
-          <div className={styles.btnBox}>
-            <Link to="/projects"><button className={styles.btn}>{t("Projects")}</button></Link>
+          <p data-aos="fade-up">{t("We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the environmental aspects related to the construction and operation of buildings and infrastructure.")}</p>
+          <div data-aos="fade-up" className={styles.btnBox}>
+            <Link onClick={scrolltoTop}  to="/projects"><button className={styles.btn}>{t("Projects")}</button></Link>
           </div>
         </div>
       </div>
       <div className={styles.ours}>
         <span className={styles.line2}></span>
         <div className={styles.our}>
-          <div className={styles.leftOurs}>
+          <div data-aos="fade-up" className={styles.leftOurs}>
             <div className={styles.titleLeft}>
               <span>1</span>
               <h2>{t("Our mission")}</h2>
             </div>
             <p className={styles.textLeft}>{t("Our mission We introduce the most advanced technologies in construction in Uzbekistan and create modern design solutions. Relying on first-class workers, we build affordable housing and industrial buildings for many years.")}</p>
           </div>
-          <div className={styles.rightOurs}>
+          <div data-aos="fade-down-left" className={styles.rightOurs}>
             <div className={styles.photoBox2}>
               <img src={pic3} alt="photo" className={styles.photo2} />
             </div>
           </div>
         </div>
         <div className={styles.our}>
-          <div className={styles.leftOurs}>
+          <div data-aos="fade-up" className={styles.leftOurs}>
             <div className={styles.titleLeft}>
               <span>2</span>
               <h2>{t("Our Vision")}</h2>
             </div>
             <p className={styles.textLeft}>{t("Creation of the best project company in Central Asia, which provides an opportunity to: - Society - to improve the standard of living of people by setting high standards in work. - Clients - to enjoy joint activities, to build long-term and open relationships. - Employees - constant growth,")}</p>
           </div>
-          <div className={styles.rightOurs}>
+          <div data-aos="fade-down-left" className={styles.rightOurs}>
             <div className={styles.photoBox2}>
               <img src={pic4} alt="photo" className={styles.photo2} />
             </div>
           </div>
         </div>
         <div className={styles.our}>
-          <div className={styles.leftOurs}>
+          <div data-aos="fade-up" className={styles.leftOurs}>
             <div className={styles.titleLeft}>
               <span>3</span>
               <h2>{t("Our values")}</h2>
             </div>
             <p className={styles.textLeft}>{t("Our values Since the founding (LLC)")} "Discover Invest" {t("in 2008, we have been working only with professionals. Our specialists use advanced technologies and an innovative approach to business.Regardless of the time and place of operation, we remain committed to our values: staff and safety, continuous improvement and the trust of our customers.")}</p>
           </div>
-          <div className={styles.rightOurs}>
+          <div data-aos="fade-down-left" className={styles.rightOurs}>
             <div className={styles.photoBox2}>
               <img src={pic5} alt="photo" className={styles.photo2} />
             </div>

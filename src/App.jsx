@@ -12,9 +12,11 @@ import { Home } from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import { Footer } from "./components/footer/Footer";
 import { IoCall } from "react-icons/io5";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
+import Aos from "aos";
+import 'aos/dist/aos.css';
 
 
 const App = () => {
@@ -53,6 +55,9 @@ const App = () => {
       console.log("wrong", err);
     })
   }
+  const scrolltoTop = ()=>{
+    window.scrollTo(0,0)
+  }
              
   const { t, i18n } = useTranslation();
 
@@ -61,7 +66,14 @@ const App = () => {
   };
   handleChange
 
+  useEffect(()=>{
+    Aos.init({
+        duration: 600,
+        easing: 'ease-in-out',
+        offset: 50,
+    });
 
+},[])
   return (
     <div className="container">
       <Navbar /> 

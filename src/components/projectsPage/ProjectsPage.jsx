@@ -18,14 +18,18 @@ export const ProjectsPage = () => {
     };
     handleChange
   
+    const scrolltoTop = () => {
+        window.scrollTo(0, 0)
+      }
+
   
   return (
     <div className={styles.main}>
-         <div className={styles.title}>
+         <div data-aos="fade-right" className={styles.title}>
                 <div className={styles.line}></div>
                 <h2>{t("Our")}</h2>
             </div>
-            <h2 className={styles.h2}>{t("Projects")}</h2>
+            <h2 data-aos="fade-right" className={styles.h2}>{t("Projects")}</h2>
             <div className={styles.boxes}>
                 <div className={styles.row}>
                     <div className={styles.box}>
@@ -57,7 +61,7 @@ export const ProjectsPage = () => {
                 </div>
             </div>
             <div className={styles.btnBox}>
-            <Link to="/projects"><button className={styles.btn}>{t("All projects")}</button></Link>
+            <Link onClick={scrolltoTop} to="/projects"><button className={styles.btn}>{t("All projects")}</button></Link>
           </div>
     </div>
   )

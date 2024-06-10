@@ -70,3 +70,14 @@
 .btn:hover {
   transform: translateX(0%) translateY(0%);
 }
+@media (max-width: 900px) {
+  .mainPage {
+    padding: 10px 26px;
+    margin-top: 500px;
+  }
+}
+@media (max-width: 350px) {
+  .mainPage > h2 {
+    font-size: 58px;
+  }
+}

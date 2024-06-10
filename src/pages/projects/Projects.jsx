@@ -26,29 +26,29 @@ export const Projects = () => {
       </div>
       <div className={styles.boxes}>
                 <div className={styles.row}>
-                    <div className={styles.box}>
+                    <div data-aos="fade-up" className={styles.box}>
                         <img src={project1} alt="project" className={styles.img}/>
                         <a href="#" className={styles.link}>Magic city</a>
                     </div>
-                    <div className={styles.box}>
+                    <div data-aos="fade-up" className={styles.box}>
                         <img src={project3} alt="project" className={styles.img}/>
                         <a href="#" className={styles.link}>Boulevard</a>
                     </div>
-                    <div className={styles.box}>
+                    <div data-aos="fade-up" className={styles.box}>
                         <img src={project5} alt="project" className={styles.img}/>
                         <a href="#" className={styles.link}>Gardens Residence</a>
                     </div>
                 </div>
                 <div className={styles.row}>
-                    <div className={styles.box}>
+                    <div data-aos="fade-up" className={styles.box}>
                         <img src={project2} alt="project" className={styles.img}/>
                         <a href="#" className={styles.link}>Fonon</a>
                     </div>
-                    <div className={styles.box}>
+                    <div data-aos="fade-up" className={styles.box}>
                         <img src={project4} alt="project" className={styles.img}/>
                         <a href="#" className={styles.link}>Invento</a>
                     </div>
-                    <div className={styles.box}>
+                    <div data-aos="fade-up" className={styles.box}>
                         <img src={project6} alt="project" className={styles.img}/>
                         <a href="#" className={styles.link}>{t("Presidential Schools")}</a>
                     </div>

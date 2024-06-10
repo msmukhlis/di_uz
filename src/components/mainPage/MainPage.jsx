@@ -12,6 +12,10 @@ import { useTranslation } from "react-i18next";
   };
   handleChange
 
+  const scrolltoTop = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <div className={styles.main}>
       <video autoPlay muted loop className={styles.backgroundVideo}>
@@ -23,10 +27,10 @@ import { useTranslation } from "react-i18next";
         <p>{t("Perfection in everything")}</p>
         <div className={styles.btns}>
           <div className={styles.btnBox}>
-            <Link to="/projects"><button className={`${styles.btn} ${styles.btn2}`}>{t("Projects")}</button></Link>
+            <Link onClick={scrolltoTop} to="/projects"><button className={`${styles.btn} ${styles.btn2}`}>{t("Projects")}</button></Link>
           </div>
           <div className={styles.btnBox}>
-          <Link to="/Contacts"><button className={styles.btn}>{t("Contacts")}</button></Link>
+          <Link onClick={scrolltoTop} to="/Contacts"><button className={styles.btn}>{t("Contacts")}</button></Link>
           </div>
         </div>
       </div>

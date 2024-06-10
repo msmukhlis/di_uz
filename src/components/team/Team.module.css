@@ -51,3 +51,8 @@
         padding: 44px 26.4px 55px;
     }
 }
+@media (max-width: 350px) {
+    .main {
+        padding: 40px 24px 50px;
+    }
+}
