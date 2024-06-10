@@ -28,7 +28,7 @@ export const Team = () => {
         }
       },
       {
-        breakpoint: 350,
+        breakpoint: 450,
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
