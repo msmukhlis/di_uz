@@ -27,7 +27,7 @@ export const AboutPage = () => {
       <div data-aos="fade-down-right" className={styles.texts}>
             <p>{t("We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the environmental aspects related to the construction and operation of buildings and infrastructure.")}</p>
         </div>
-        <div className={styles.boxes} data-aos="fade-down-left">
+        <div className={styles.boxes} data-aos="fade-down-right">
             <div  className={styles.row}>
                 <div className={`${styles.box} ${styles.box2}`}>
                     <h2></h2>

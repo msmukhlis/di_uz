@@ -46,7 +46,7 @@ export const About = () => {
           <img src={pic1} alt="photo" className={styles.pic} />
         </div>
         <div className={styles.right}>
-          <div data-aos="fade-down-left" className={styles.photoBox}>
+          <div data-aos="fade-down-right" className={styles.photoBox}>
             <img src={pic2} alt="photo" className={styles.photo} />
           </div>
           <p data-aos="fade-up">{t("We don't just create projects, we create new opportunities. By building state-scale facilities, we are building the future. We care about the environment: the company takes full responsibility for the environmental aspects related to the construction and operation of buildings and infrastructure.")}</p>
@@ -65,7 +65,7 @@ export const About = () => {
             </div>
             <p className={styles.textLeft}>{t("Our mission We introduce the most advanced technologies in construction in Uzbekistan and create modern design solutions. Relying on first-class workers, we build affordable housing and industrial buildings for many years.")}</p>
           </div>
-          <div data-aos="fade-down-left" className={styles.rightOurs}>
+          <div data-aos="fade-down-right" className={styles.rightOurs}>
             <div className={styles.photoBox2}>
               <img src={pic3} alt="photo" className={styles.photo2} />
             </div>
@@ -79,7 +79,7 @@ export const About = () => {
             </div>
             <p className={styles.textLeft}>{t("Creation of the best project company in Central Asia, which provides an opportunity to: - Society - to improve the standard of living of people by setting high standards in work. - Clients - to enjoy joint activities, to build long-term and open relationships. - Employees - constant growth,")}</p>
           </div>
-          <div data-aos="fade-down-left" className={styles.rightOurs}>
+          <div data-aos="fade-down-right" className={styles.rightOurs}>
             <div className={styles.photoBox2}>
               <img src={pic4} alt="photo" className={styles.photo2} />
             </div>
@@ -93,7 +93,7 @@ export const About = () => {
             </div>
             <p className={styles.textLeft}>{t("Our values Since the founding (LLC)")} "Discover Invest" {t("in 2008, we have been working only with professionals. Our specialists use advanced technologies and an innovative approach to business.Regardless of the time and place of operation, we remain committed to our values: staff and safety, continuous improvement and the trust of our customers.")}</p>
           </div>
-          <div data-aos="fade-down-left" className={styles.rightOurs}>
+          <div data-aos="fade-down-right" className={styles.rightOurs}>
             <div className={styles.photoBox2}>
               <img src={pic5} alt="photo" className={styles.photo2} />
             </div>
