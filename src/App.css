@@ -15,9 +15,6 @@ img {
 span, a, label {
   display: inline-block;
 }
-.container {
-    max-width: 1280px;
-}
 button {
   cursor: pointer;
 }
@@ -47,7 +44,7 @@ a {
 @media (max-width: 900px) {
   .callBox {
     top: 2.5%;
-    right: 10%;
+    right: 20%;
    
   }
 }

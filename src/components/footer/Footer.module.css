@@ -185,10 +185,7 @@ label {
         padding: 30px 26px 33px;
     }
 }
-@media (max-width: 900px) {
-    .left {
-        margin-bottom: 200px;
-    }
+@media (max-width: 430px) {
     .footer {
         padding: 60px 24px;
     }

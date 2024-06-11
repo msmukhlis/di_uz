@@ -78,7 +78,7 @@
     margin-top: 500px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 430px) {
   .mainPage > h2 {
     font-size: 58px;
   }
