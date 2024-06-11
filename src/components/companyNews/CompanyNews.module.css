@@ -3,6 +3,8 @@
     background-image: url(../../../public/images/bg-news.svg);
     background-repeat: no-repeat;
     background-size: cover;
+    max-width: 1280px;
+    margin: 0 auto;
 }
 .title {
     display: flex;
