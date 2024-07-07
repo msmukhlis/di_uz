@@ -11,6 +11,7 @@
 img {
   max-width: 100%;
   height: auto;
+
 }
 span, a, label {
   display: inline-block;
@@ -43,7 +44,7 @@ a {
 
 @media (max-width: 900px) {
   .callBox {
-    top: 2.5%;
+    top: 2%;
     right: 20%;
    
   }

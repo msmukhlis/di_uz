@@ -26,31 +26,49 @@ export const Projects = () => {
       </div>
       <div className={styles.boxes}>
                 <div className={styles.row}>
-                    <div data-aos="fade-up" className={styles.box}>
-                        <img src={project1} alt="project" className={styles.img}/>
-                        <a href="#" className={styles.link}>Magic city</a>
+                    <div className={styles.box}>
+                        <img src={project1} alt="project" className={styles.img} />
+                        <div className={styles.content}>
+                            <a href="#" className={styles.contentTitle}>Magic City</a>
+                            <p className={styles.contentText}>Magic city is a large socially significant project. The cultural and entertainment cluster in Tashkent is one of the new attractions.</p>
+                        </div>
                     </div>
-                    <div data-aos="fade-up" className={styles.box}>
-                        <img src={project3} alt="project" className={styles.img}/>
-                        <a href="#" className={styles.link}>Boulevard</a>
+                    <div className={styles.box}>
+                        <img src={project3} alt="project" className={styles.img} />
+                        <div className={styles.content}>
+                            <a href="#" className={styles.contentTitle}>Gardens Residence</a>
+                            <p className={styles.contentText}>A grandiose residential quarter in the heart of the capital.</p>
+                        </div>
                     </div>
-                    <div data-aos="fade-up" className={styles.box}>
-                        <img src={project5} alt="project" className={styles.img}/>
-                        <a href="#" className={styles.link}>Gardens Residence</a>
+                    <div className={styles.box}>
+                        <img src={project5} alt="project" className={styles.img} />
+                        <div className={styles.content}>
+                            <a href="#" className={styles.contentTitle}>Invento</a>
+                            <p className={styles.contentText}>International kindergarten and school located in the international business center Tashkent City</p>
+                        </div>
                     </div>
                 </div>
                 <div className={styles.row}>
-                    <div data-aos="fade-up" className={styles.box}>
-                        <img src={project2} alt="project" className={styles.img}/>
-                        <a href="#" className={styles.link}>Fonon</a>
+                    <div className={styles.box}>
+                        <img src={project2} alt="project" className={styles.img} />
+                        <div className={styles.content}>
+                            <a href="#" className={styles.contentTitle}>Boulevard</a>
+                            <p className={styles.contentText}>International kindergarten and school located in the international business center Tashkent City</p>
+                        </div>
                     </div>
-                    <div data-aos="fade-up" className={styles.box}>
-                        <img src={project4} alt="project" className={styles.img}/>
-                        <a href="#" className={styles.link}>Invento</a>
+                    <div className={styles.box}>
+                        <img src={project4} alt="project" className={styles.img} />
+                        <div className={styles.content}>
+                            <a href="#" className={styles.contentTitle}>Fonon</a>
+                            <p className={styles.contentText}>Fonon is a jewelry factory in Uzbekistan built on the basis of Italian ones in 2020. Fonon is the only large enterprise in Central Asia producing jewelry made of precious metals in European and Oriental style.</p>
+                        </div>
                     </div>
-                    <div data-aos="fade-up" className={styles.box}>
-                        <img src={project6} alt="project" className={styles.img}/>
-                        <a href="#" className={styles.link}>{t("Presidential Schools")}</a>
+                    <div className={styles.box}>
+                        <img src={project6} alt="project" className={styles.img} />
+                        <div className={styles.content}>
+                            <a href="#" className={styles.contentTitle}>Presidential Schools</a>
+                            <p className={styles.contentText}>The Presidential School is a specialized public educational institution whose activities are aimed at identifying and educating gifted children to train highly qualified specialists.</p>
+                        </div>                    
                     </div>
                 </div>
             </div>
