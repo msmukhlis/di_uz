@@ -7,7 +7,7 @@ import { News } from './pages/news/News';
 import { Contacts } from './pages/contacts/Contacts';
 import { IoClose } from "react-icons/io5";
 import './App.css';
-import styles from "./App.module.css"
+import styles from "./App.module.css";
 import { Home } from './pages/home/Home';
 import Navbar from './components/navbar/Navbar';
 import { Footer } from "./components/footer/Footer";
@@ -18,83 +18,83 @@ import { useTranslation } from "react-i18next";
 import Aos from "aos";
 import 'aos/dist/aos.css';
 
-
 const App = () => {
-
   const [openFormBox, setOpenFormBox] = useState(false);
 
   const handleOpen = () => {
     setOpenFormBox(true);
-  }
+  };
 
-  const handleClose = () => {
+  const handleClose = (e) => {
+    e.stopPropagation(); // Prevent event bubbling
     setOpenFormBox(false);
-  }
+  };
 
   const sendMessage = (e) => {
     e.preventDefault();
-    const token = "7326578532:AAFl2JZIl8OAdYGOoJMNU5jvhdIkB8XyjfE"
-    const chat_id =  5089303527;
-    const url = `https://api.telegram.org/bot${token}/sendMessage`
+    const token = "7326578532:AAFl2JZIl8OAdYGOoJMNU5jvhdIkB8XyjfE";
+    const chat_id = 5089303527;
+    const url = `https://api.telegram.org/bot${token}/sendMessage`;
     const name = document.getElementById("name").value;
     const tel = document.getElementById("tel").value;
     const department = document.getElementById("department").value;
     const messageContent = `Name: ${name} \nPhone Number: ${tel} \nDepartment: ${department} `;
 
     axios({
-      url:url,
-      method:"POST",
+      url: url,
+      method: "POST",
       data: {
-        "chat_id":chat_id,
+        "chat_id": chat_id,
         "text": messageContent,
       }
     }).then((res) => {
       document.getElementById("myForm").reset();
-      alert("Sent successfully")
+      alert("Sent successfully");
     }).catch((err) => {
       console.log("wrong", err);
-    })
-  }
-  const scrolltoTop = ()=>{
-    window.scrollTo(0,0)
-  }
-             
+    });
+    handleClose(true)
+  };
+
+  const scrolltoTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   const { t, i18n } = useTranslation();
 
   const handleChange = (selectedLanguage) => {
     i18n.changeLanguage(selectedLanguage);
   };
-  handleChange
 
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init({
-        duration: 600,
-        easing: 'ease-in-out',
-        offset: 50,
+      duration: 600,
+      easing: 'ease-in-out',
+      offset: 50,
     });
+  }, []);
 
-},[])
   return (
     <div className="container">
-      <Navbar /> 
+      <Navbar />
       <div className="callBox" onClick={handleOpen}>
         <a className="call" href="#"><IoCall /></a>
       </div>
       {openFormBox && (
-        <div className={styles.formBox}>
-          <form className={styles.form} id="myForm" onSubmit={sendMessage}>
+        <div className={styles.formBox} onClick={handleClose}>
+          <form className={styles.form} id="myForm" onSubmit={sendMessage} onClick={(e) => e.stopPropagation()}>
             <h2 className={styles.title}>{t("WE WILL CALL YOU BACK")}</h2>
             <p className={styles.text}>{t("Leave your number and we will call you back.")}</p>
             <div className={styles.row}>
               <label className={styles.label}>
                 <span>{t("Name")}</span>
-                <input className={styles.input} id="name" type="text"/>
+                <input className={styles.input} id="name" type="text" />
               </label>
             </div>
             <div className={styles.row}>
               <label className={styles.label}>
                 <span>{t("Phone number")}</span>
-                <input className={styles.input} id="tel" type="tel"/>
+                <input className={styles.input} id="tel" type="tel" />
               </label>
             </div>
             <div className={styles.row}>
@@ -113,7 +113,7 @@ const App = () => {
             </div>
             <button className={styles.btn} type="submit">{t("Send")}</button>
             <p className={styles.text2}>{t("Please note that the opening hours of the sales department are from 18:00 to 21:00")}</p>
-            <button className={styles.btnClose} type="button" onClick={handleClose}><IoClose /></button>
+            {/* <button className={styles.btnClose} type="button" onClick={handleClose}><IoClose /></button> */}
           </form>
         </div>
       )}
@@ -124,7 +124,7 @@ const App = () => {
         <Route path="/news" element={<News />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
-      <Footer/>
+      <Footer />
     </div>
   );
 };
